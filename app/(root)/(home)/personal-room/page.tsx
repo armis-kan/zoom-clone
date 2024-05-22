@@ -19,7 +19,7 @@ const PersonalRoom = () => {
   const { toast } = useToast();
   const { user } = useUser();
   const meetingId = user?.id;
-  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meetingId}?=personal=true`
+  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meetingId}?personal=true`
   const client = useStreamVideoClient();
   const router = useRouter();
 
